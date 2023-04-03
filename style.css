@@ -110,12 +110,12 @@ h1 {
 	position: absolute;
 	top: -300px;
 	left: 50%;
-	translate: -50%, -50%;
+	transform: translate(-50%, -50%);
 	width: 600px;
 	height: 200px;
 	border-radius: 8px;
 	border: 2px solid black;
-	transition: top 0.5s;
+	transition: top 0.5s;	
 }
 
 .popup p {
