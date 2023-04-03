@@ -85,7 +85,7 @@ h1 {
 .close {
 	display: block;
 	padding: 10px 0;
-	margin: 10px;
+	margin-left: 10px;
 	width: 100px;
 	font-size: 18px;
 	background-color: rgb(0, 140, 255);
@@ -113,9 +113,10 @@ h1 {
 	transform: translate(-50%, -50%);
 	width: 600px;
 	height: 200px;
+	background-color: rgb(255, 255, 255);
 	border-radius: 8px;
 	border: 2px solid black;
-	transition: top 0.5s;	
+	transition: top 0.5s;
 }
 
 .popup p {
