@@ -1,3 +1,7 @@
+:root {
+	--error: rgb(0, 137, 250);
+}
+
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -11,7 +15,6 @@ body {
 	min-height: 100vh;
 	font-family: 'Montserrat', sans-serif;
 	background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
-	/* text-align: center; */
 }
 
 .wrapper {
@@ -26,12 +29,6 @@ body {
 	}
 }
 
-/* @media (min-width: 768px) {
-	.wrapper {
-		width: 600px;
-	}
-} */
-
 form {
 	padding: 40px;
 	font-size: 20px;
@@ -43,6 +40,7 @@ h1 {
 }
 
 .form-box {
+	position: relative;
 	margin-bottom: 15px;
 }
 
@@ -55,19 +53,27 @@ h1 {
 	width: 100%;
 	padding: 10px;
 	font-size: 16px;
-	bottom: 1px solid rgb(197, 197, 197);
+	border: 1px solid rgb(197, 197, 197);
 	border-radius: 5px;
 }
 
+.form-box .fa-regular {
+	position: absolute;
+	right: 15px;
+	transform: translate(0,-50%);
+	top: 50%;
+	cursor: pointer;
+}
+
 .form-box.error input {
-	bottom: 1px solid rgb(0, 137, 250);
+	border: 1px solid var(--error);
 	background-color: rgba(0, 137, 250, 0.1);
 }
 
 .form-box .error-text {
 	margin: 5px 0 0 10px;
 	font-size: 14px;
-	color: rgb(0, 137, 250);
+	color: var(--error);
 	visibility: hidden;
 }
 
@@ -129,4 +135,8 @@ h1 {
 
 .show-popup {
 	top: 150px;
+}
+
+.none{
+	display: none;
 }
