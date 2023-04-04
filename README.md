@@ -13,8 +13,10 @@
 <br>
 
 ## Project description
-![Site screenshot][product-screenshot]
-The site is a form validator that uses RegEx. Code is prepared if someone adds a new input. The site is based on a project from the course but I added functions to show and hide the password.
+![Site screenshot][product-screenshot] <br>
+
+The site is a form validator that uses RegEx. Code is prepared if someone adds a new input. <br>
+The site is based on a project from the course but I added functions to show and hide the password.
 
 ## Live Demo
 To see the live demo of this website, please visit: https://form-rudydev.netlify.app/
